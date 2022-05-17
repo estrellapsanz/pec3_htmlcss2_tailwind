@@ -17,8 +17,7 @@
  * see commented examples below
  */
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
+@import 'npm:@fortawesome/fontawesome-free/css/all.css';
 
 /**
  * Import layouts
@@ -28,6 +27,16 @@
 //@import "layouts/home";
 
 @tailwind utilities;
+
+@layer components {
+  .dstage {
+    @apply border-2 border-blue text-blue text-center;
+  }
+
+
+
+}
+
 /**
  * Do NOT include anything else in this file!
  */
