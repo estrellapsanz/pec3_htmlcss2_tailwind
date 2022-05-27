@@ -2,6 +2,7 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     colors: {
+      electric_blue: "#0ff",
       blue: "#1fb6ff",
       black: "#000000",
       white: "#f8f8ff",
