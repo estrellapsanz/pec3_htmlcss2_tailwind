@@ -26,31 +26,26 @@
 
 //@import "layouts/home";
 
-@tailwind utilities;
 
-@layer base {
-  html,p {
-    font-family:  -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji',
-    'Segoe UI Symbol';
-  }
-}
 
 @layer components {
-  .dstage {
+  .electrik-blue-border-center {
     @apply border-2 border-electric_blue text-electric_blue text-center;
   }
-  .artist{
-    @apply m-1 text-center lg:text-2xl lg:font-semibold text-soft_pink
+  .pink-center-semibold{
+    @apply m-1 text-center lg:text-2xl lg:font-semibold text-pink
+  }
+  .t-soft_pink-just-mt4{
+    @apply mt-4 text-justify text-soft_pink text-sm
+  }
+
+  .title {
+    @apply m-10 text-center font-semibold text-soft_pink text-2xl
   }
 }
+
+@tailwind utilities;
+
 
 /**
  * Do NOT include anything else in this file!

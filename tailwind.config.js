@@ -1,24 +1,19 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     colors: {
       electric_blue: "#0ff",
-      blue: "#1fb6ff",
       black: "#000000",
-      white: "#f8f8ff",
-      purple: "#7e5bef",
       pink: "#ff00ff",
       soft_pink: "#e39aec",
-      orange: "#ff7849",
-      green: "#13ce66",
-      yellow: "#ffc82c",
-      "gray-dark": "#273444",
-      gray: "#8492a6",
-      "gray-light": "#d3dce6",
     },
     fontFamily: {
-      sans: ["Graphik", "sans-serif"],
-      serif: ["Merriweather", "serif"],
+      fontFamily: {
+        sans: [...defaultTheme.fontFamily.sans],
+        serif: [...defaultTheme.fontFamily.serif],
+        mono: [...defaultTheme.fontFamily.mono],
+      },
     },
     fontSize: {
       xs: ".75rem",
